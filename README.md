@@ -1,6 +1,8 @@
 # Library-management-python-
+
 Books = {"math":["self:1","row:1"],"english":["self:1","row:2"],"physics":["self:1","row:3"],"ict":["self:1","row:4"]}
 number_of_books = {"math":10,"english":11,"physics":20,"ict":20}
+
 class Library:   #creating a library type object
     def __init__(self,name):
         self.name=name
@@ -9,6 +11,7 @@ class Library:   #creating a library type object
         Books[book]=[position]
         number_of_books[book]=number
         print ("Added",book,"into library")
+        
 class Student:   #creating a student type object
     def __init__(self,name):
         self.name=name
@@ -48,6 +51,7 @@ class Student:   #creating a student type object
                 c=c+1
         if c==0:
             print ("The book is not in our library")
+            
 class Stack():   #this class is for keeping a track that a student took how much book
   
   def __init__(self):
